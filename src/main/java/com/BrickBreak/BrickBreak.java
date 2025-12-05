@@ -242,6 +242,4 @@ public class BrickBreak extends JPanel implements KeyListener, ActionListener {
 		}
 
 	}
-
-
 }
