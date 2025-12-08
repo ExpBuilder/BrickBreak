@@ -30,7 +30,6 @@ public class Brick {
 	public int getWidth() {
 		return width;
 	}
-
 	public void setWidth(int width) {
 		this.width = width;
 	}
@@ -38,7 +37,6 @@ public class Brick {
 	public int getHeight() {
 		return height;
 	}
-
 	public void setHeight(int height) {
 		this.height = height;
 	}
@@ -46,7 +44,6 @@ public class Brick {
 	public int getX() {
 		return x;
 	}
-
 	public void setX(int x) {
 		this.x = x;
 	}
@@ -54,7 +51,6 @@ public class Brick {
 	public int getY() {
 		return y;
 	}
-
 	public void setY(int y) {
 		this.y = y;
 	}
@@ -62,7 +58,6 @@ public class Brick {
 	public int getHp() {
 		return hp;
 	}
-
 	public void setHp(int hp) {
 		this.hp = hp;
 	}
@@ -87,7 +82,4 @@ public class Brick {
 	public void hit() {
 		hp--;
 	}
-	
-	
-	
 }

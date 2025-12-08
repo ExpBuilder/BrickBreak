@@ -19,16 +19,16 @@ public class Paddle {
 
 	// Methods to set and get x and y, respectively
 	public void setX (int initX) {
-		x = initX;
+		this.x = initX;
 	}
 	public void setY (int initY) {
-		x = initY;
+		this.y = initY;
 	}
 	public int getX () {
-		return x;
+		return this.x;
 	}
 	public int getY () {
-		return y;
+		return this.y;
 	}
 
 	// Methods to get width and height, respectively

@@ -16,16 +16,16 @@ public class Ball {
 
 	// Methods to set and get x and y, respectively
 	public void setX (int initX) {
-		x = initX;
+		this.x = initX;
 	}
 	public void setY (int initY) {
-		x = initY;
+		this.y = initY;
 	}
 	public int getXpos () {
-		return x;
+		return this.x;
 	}
 	public int getYpos () {
-		return y;
+		return this.y;
 	}
 
 	// Get ball size
@@ -38,7 +38,7 @@ public class Ball {
 		xVelocity = initXVelocity;
 	}
 	public void setYVelocity(int initYVelocity) {
-		xVelocity = initYVelocity;
+		yVelocity = initYVelocity;
 	}
 	
 	// Methods to reverse x and y velocities, respectively
