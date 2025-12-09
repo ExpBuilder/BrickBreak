@@ -34,11 +34,11 @@ public class Ball {
 	}
 
 	// Methods to set x and y velocities, respectively
-	public void setXVelocity(int initXVelocity) {
-		xVelocity = initXVelocity;
+	public void setXVelocity(int xVelocity) {
+		this.xVelocity = xVelocity;
 	}
-	public void setYVelocity(int initYVelocity) {
-		yVelocity = initYVelocity;
+	public void setYVelocity(int yVelocity) {
+		this.yVelocity = yVelocity;
 	}
 	
 	// Methods to reverse x and y velocities, respectively
@@ -49,7 +49,7 @@ public class Ball {
 		yVelocity *= -1;
 	}
 
-	
+	// Moves ball
 	public void move() {
 		x += xVelocity;
 		y += yVelocity;

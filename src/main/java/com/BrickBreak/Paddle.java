@@ -39,12 +39,17 @@ public class Paddle {
 		return height;
 	}
 
-	// Methods to set and get velocities, respectively
+	// Methods to set, add, and get velocities, respectively
 	public void setVelocity(int initVelocity) {
 		velocity = initVelocity;
 	}
 	public void addVelocity(int change) {
 		velocity += change;
+
+		int lim = 3;
+
+		if (velocity > lim) velocity = lim;
+		if (velocity < -1 * lim) velocity = -1 * lim;
 	}
 	public int getVelocity() {
 		return velocity;
@@ -56,6 +61,8 @@ public class Paddle {
 	}
 	
 	public void move() {
-		y += velocity;
+		x += velocity;
+		if (x > (int) (750 - (3.0 / 2)  * width)) x = (int) (750 - (3.0 / 2)  * width);
+		if (x < 0) x = 0;
 	}
 }

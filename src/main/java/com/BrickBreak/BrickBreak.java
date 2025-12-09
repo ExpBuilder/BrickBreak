@@ -207,18 +207,20 @@ public class BrickBreak extends JPanel implements KeyListener, ActionListener {
 	public void keyPressed(KeyEvent e) {
 		if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
 			play = true;
-			if (player.getVelocity() == 0)
+			/*if (player.getVelocity() == 0)
 				player.addVelocity(8);
 			else {
 				player.addVelocity(4);
-			}
+			}*/
+			player.setVelocity(2);
 		} else if (e.getKeyCode() == KeyEvent.VK_LEFT) {
 			play = true;
-			if (player.getVelocity() == 0)
+			/*if (player.getVelocity() == 0)
 				player.addVelocity(-8);
 			else {
 				player.addVelocity(-4);
-			}
+			}*/
+			player.setVelocity(-2);
 		}
 
 		if (e.getKeyCode() == KeyEvent.VK_ENTER) {
