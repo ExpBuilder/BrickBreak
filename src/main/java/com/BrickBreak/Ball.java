@@ -1,13 +1,18 @@
 package com.BrickBreak;
 import java.awt.*;
 
+//  Class author:  Joe Jiao
+//  Date created:  11/5/2025
+//  General description:   This class defines a ball for the game along with various methods to interact with the ball.
 public class Ball {
+	// Instance Variables
 	private int x;
 	private int y;
 	private int xVelocity;
 	private int yVelocity;
 	private int size;
 	
+	// Ball constructor
 	public Ball (int x, int y, int size) {
 		this.x = x;
 		this.y = y;
@@ -41,22 +46,27 @@ public class Ball {
 		this.yVelocity = yVelocity;
 	}
 	
-	// Methods to reverse x and y velocities, respectively
+	// Precondition: No inputs
+	// Postcondition: xVelocity is reversed
 	public void reverseX() {
 		xVelocity *= -1;
 	}
+		
+	// Precondition: No inputs
+	// Postcondition: yVelocity is reversed
 	public void reverseY() {
 		yVelocity *= -1;
 	}
 
-	// Moves ball
+	// Precondition: No inputs
+	// Postcondition: The ball's xVelocity and yVelocity are added to the ball's x and y, respectively
 	public void move() {
 		x += xVelocity;
 		y += yVelocity;
 	}
 
-	//precondition: g is not null
-	//postcondition: The ball is drawn at (x,y)
+	// Precondition: g is not null
+	// Postcondition: The ball is drawn at (x,y)
 	public void draw(Graphics g) {
 		g.setColor(Color.green);
 		g.drawOval(x, y, size, size);

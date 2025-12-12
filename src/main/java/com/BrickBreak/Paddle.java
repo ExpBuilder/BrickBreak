@@ -1,7 +1,11 @@
 package com.BrickBreak;
 
+import java.awt.Color;
 import java.awt.Graphics;
-import java.awt.*;
+
+//  Class author:  Joe Jiao
+//  Date created:  11/5/2025
+//  General description:   This class defines the paddle controlled by the player along with methods to manipulate the paddle. 
 
 public class Paddle {
 	private int x;
@@ -10,6 +14,7 @@ public class Paddle {
 	private int width;
 	private int height;
 	
+	// Paddle constructor
 	public Paddle (int x, int y, int width, int height) {
 		this.x = x;
 		this.y = y;
@@ -54,12 +59,16 @@ public class Paddle {
 	public int getVelocity() {
 		return velocity;
 	}
-	
+
+	// Precondition: g is not null
+	// Postcondition: The rectangle (the paddle) is drawn at (x,y) with width width and height height
 	public void draw(Graphics g) {
 		g.setColor(Color.white);
 		g.fillRect(x, y, width, height);
 	}
 	
+	// Precondition: No inputs
+	// Postcondition: velocity is added to x. If x goes offscreen, x is set to the minimum/maximum x-coordinate to stay onscreen (on the correct side)
 	public void move() {
 		x += velocity;
 		if (x > (int) (750 - (3.0 / 2)  * width)) x = (int) (750 - (3.0 / 2)  * width);
