@@ -4,7 +4,7 @@ import java.awt.Color;
 import java.awt.Graphics;
 
 //  Class author:  Joe Jiao
-//  Date created:  11/5/2025
+//  Date created:  12/5/2025
 //  General description:   This class defines the paddle controlled by the player along with methods to manipulate the paddle. 
 
 public class Paddle {
