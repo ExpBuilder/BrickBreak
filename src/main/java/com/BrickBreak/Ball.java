@@ -2,7 +2,7 @@ package com.BrickBreak;
 import java.awt.*;
 
 //  Class author:  Joe Jiao
-//  Date created:  11/5/2025
+//  Date created:  12/5/2025
 //  General description:   This class defines a ball for the game along with various methods to interact with the ball.
 public class Ball {
 	// Instance Variables
